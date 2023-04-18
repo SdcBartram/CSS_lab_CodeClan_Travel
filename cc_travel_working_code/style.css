@@ -6,9 +6,9 @@ body {
 
 header {
   background-color: #4584b1;
-  height: 4rem;
+  height: 40px;
   color:#fff;
-  font-size: 2rem;
+  font-size: 35px;
   display: flex;
   align-items: center;
   /* 
@@ -21,14 +21,14 @@ header {
 }
 
 #logo {
-  margin-left: 40px;
+  margin-left: 35px;
   /* The logo element has an id of logo */
   /* Give the logo element a left margin of 40px */
 }
 
 nav {
   background-color: #103594;
-  height: 2rem;
+  height: 20px;
   display: flex;
   align-items: center;
   /* Give the nav a background color (#103594) */
@@ -76,15 +76,14 @@ nav ul li a:hover {
 
 /* Where to go section includes an <h3> element and a <form>  */
 .where-togo {
-
   background-color: #040E27;
   padding: 5px;
 }
 
-main h3 {
+.where-togo h3 {
   color: white;
-  font-size: 2rem;
-  margin-bottom: 20;
+  font-size: 25px;
+  margin-bottom: 15px;
 }
 
 section form {
@@ -154,13 +153,15 @@ input {
   */
 }
 
-.container {
+.popular .container {
+  width: 80%;
+  margin: 0 auto;
   display: grid;
   grid-template-areas: 
   "div1 div2 div3"
   "div4 div5 div6";
   grid-template-columns: repeat(3, 1fr);
-  justify-content: space-around;
+  justify-content:space-evenly;
   /* The destinations are enclosed in an article element that we want to make a grid */
   /* Set the display property to 'grid' and justify the content */
 }
@@ -189,6 +190,8 @@ input {
 }
 
 .row {
+display: grid;
+grid-template-columns: 30% 30% 30%;
   /* The row of the grid has 3 columns which should be the same width and roughly a third of the available space */
   /* Use the grid-template-columns property to set each column to 30% */
   /* You can experiment with different units for the width values */
@@ -196,11 +199,15 @@ input {
 }
 
 .section-title {
+  display: flex;
+  justify-content: center;
   /* The <div> with class section-title contains an <h3> child which we want to center */
   /* The easiest way to center child elements is to set the display property to 'flex' and justify the content */
 }
 
 .single-destination {
+  margin: 5px;
+  overflow: hidden;
   /* Use the margin property to make some space between the destinations */
   /* Set the overflow to 'hidden' */
   /* The overflow CSS shorthand property sets the desired behaviour for an element's overflow 
@@ -208,14 +215,33 @@ input {
 }
 
 img {
+  max-width: 100%;
   /* Set the max-width property to 100% */
 }
 
 /* Let's take the training wheels off. Finish off the page by adding styles to the remaining blocks */
 
 .testimonial-area {
-  /* Write your code here */
+  background-color: rgb(34, 25, 64);
+  display: grid;
+  grid-template-areas: 
+  "row1 row2 row3";
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-evenly; /* evenly distribute columns horizontally */
 }
+
+.row1 {
+  grid-area: row1; /* display in first column */
+}
+
+.row2 {
+  grid-area: row2; /* display in second column */
+}
+
+.row3 {
+  grid-area: row3; /* display in third column */
+}
+
 
 .single-testmonial{
   /* Write your code here */
