@@ -223,47 +223,68 @@ img {
 
 .testimonial-area {
   background-color: rgb(34, 25, 64);
-  display: grid;
+  display: flex;
+  justify-content: center;
+  /* display: grid;
   grid-template-areas: 
   "row1 row2 row3";
   grid-template-columns: 30% 30% 30%;
-  justify-content: space-evenly; /* evenly distribute columns horizontally */
+  justify-content: space-evenly; evenly distribute columns horizontally */
 }
 
-.row1 {
+/* .row1 {
   grid-area: row1; /* display in first column */
-}
+/* }
 
 .row2 {
   grid-area: row2; /* display in second column */
-}
+/* } */
 
-.row3 {
+/* .row3 {
   grid-area: row3; /* display in third column */
-}
+/* }  */
 
 
 .single-testmonial{
+  padding: 30px;
+  background-color: white;
+  height: 275px;
+  margin:15px
   /* Write your code here */
 }
 
 .footer {
+  background-color: #040E27;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  
   /* Write your code here */
 }
 
 .footer-widget p {
+  color: white;
+  margin: 5px;
+  font-size: 10px;
   /* Write your code here */
 }
 
 .footer-widget a:hover {
+  text-decoration: underline;
    /* Write your code here */
 }
 
 .footer-widget ul li {
+  color:white;
+  font-size: 15px;
+  text-decoration: none;
   /* Write your code here */
 }
 
 .footer-widget a {
+  color: white;
+  font-size: 10px;
+  text-decoration: none;
    /* Write your code here */
 }
 
